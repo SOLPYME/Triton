@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\Triton.Core.Domain\Triton.Core.Domain.csproj" />
+    <ProjectReference Include="..\..\Domain\Triton.Core.Domain.Common\Triton.Core.Domain.Common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

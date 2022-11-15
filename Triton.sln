@@ -19,8 +19,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8999CF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Application", "src\Kernel\Core\Application\Triton.Core.Application\Triton.Core.Application.csproj", "{FE58CF63-210C-4262-854E-E0707345E20B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Domain", "src\Kernel\Core\Domain\Triton.Core.Domain\Triton.Core.Domain.csproj", "{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Domain.Common", "src\Kernel\Core\Domain\Triton.Core.Domain.Common\Triton.Core.Domain.Common.csproj", "{AF94676A-3CF0-4059-B65E-5108464AC623}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton", "src\Presentation\Triton\Triton.csproj", "{22370B06-C39F-452F-BD84-59FB5753C8A3}"
@@ -41,10 +39,6 @@ Global
 		{FE58CF63-210C-4262-854E-E0707345E20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE58CF63-210C-4262-854E-E0707345E20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE58CF63-210C-4262-854E-E0707345E20B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF94676A-3CF0-4059-B65E-5108464AC623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF94676A-3CF0-4059-B65E-5108464AC623}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF94676A-3CF0-4059-B65E-5108464AC623}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -76,7 +70,6 @@ Global
 		{DDBF5E82-02BC-46D4-AA5C-D53BCF4D24B5} = {CD2A597F-EEB4-4AF0-8E98-C5CC83FC7422}
 		{8999CF74-8191-408D-BEA5-2D8FAF90DEC0} = {CD2A597F-EEB4-4AF0-8E98-C5CC83FC7422}
 		{FE58CF63-210C-4262-854E-E0707345E20B} = {DDBF5E82-02BC-46D4-AA5C-D53BCF4D24B5}
-		{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77} = {8999CF74-8191-408D-BEA5-2D8FAF90DEC0}
 		{AF94676A-3CF0-4059-B65E-5108464AC623} = {8999CF74-8191-408D-BEA5-2D8FAF90DEC0}
 		{22370B06-C39F-452F-BD84-59FB5753C8A3} = {61FC69E1-4D97-4478-8F4C-C947C00423D4}
 		{8AEF8BDA-8D10-457F-933F-10DE2D3A69A3} = {C791A273-77D3-45CF-BACF-2F210D82C0D1}
@@ -91,29 +84,5 @@ Global
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
 		$0.TextStylePolicy = $12
-		$2.inheritsSet = null
-		$2.scope = text/x-csharp
-		$0.CSharpFormattingPolicy = $3
-		$3.scope = text/x-csharp
-		$4.FileWidth = 80
-		$4.TabsToSpaces = True
-		$4.scope = text/plain
-		$5.inheritsSet = null
-		$5.scope = text/x-css
-		$6.inheritsSet = null
-		$6.scope = text/x-web
-		$7.inheritsSet = null
-		$7.scope = text/x-vs
-		$8.inheritsSet = null
-		$8.scope = text/x-cshtml-web
-		$9.inheritsSet = null
-		$9.scope = text/x-html
-		$10.inheritsSet = null
-		$10.scope = text/x-javascript
-		$11.inheritsSet = null
-		$11.scope = text/x-jsts
-		$12.inheritsSet = null
-		$12.scope = text/x-json
-		$0.StandardHeader = $13
 	EndGlobalSection
 EndGlobal
