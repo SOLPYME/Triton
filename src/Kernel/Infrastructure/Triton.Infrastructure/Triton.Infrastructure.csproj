@@ -19,4 +19,10 @@
     <ProjectReference Include="..\..\Core\Application\Triton.Core.Application\Triton.Core.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Email\" />
+    <Folder Include="Reporitories\" />
+    <Folder Include="Persistence\" />
+  </ItemGroup>
+
 </Project>

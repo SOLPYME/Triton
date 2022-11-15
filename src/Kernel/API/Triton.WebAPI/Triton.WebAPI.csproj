@@ -19,4 +19,9 @@
     <ProjectReference Include="..\..\Infrastructure\Triton.Infrastructure\Triton.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Errors\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
 </Project>
