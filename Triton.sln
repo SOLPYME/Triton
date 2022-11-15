@@ -17,19 +17,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{8999CF74-8191-408D-BEA5-2D8FAF90DEC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.WebAPI", "src\Kernel\API\Triton.WebAPI\Triton.WebAPI.csproj", "{0553DA5E-1B97-4DCD-9A67-BEB9353EC615}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Application", "src\Kernel\Core\Application\Triton.Core.Application\Triton.Core.Application.csproj", "{FE58CF63-210C-4262-854E-E0707345E20B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Infrastructure", "src\Kernel\Infrastructure\Triton.Infrastructure\Triton.Infrastructure.csproj", "{DC00A194-FBA6-41AF-BEC4-90CFC491A5AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Domain", "src\Kernel\Core\Domain\Triton.Core.Domain\Triton.Core.Domain.csproj", "{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Infrastructure.Identity", "src\Kernel\Infrastructure\Triton.Infrastructure.Identity\Triton.Infrastructure.Identity.csproj", "{CE500839-065F-44F8-8F0D-96C72EE9CAE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Domain.Common", "src\Kernel\Core\Domain\Triton.Core.Domain.Common\Triton.Core.Domain.Common.csproj", "{AF94676A-3CF0-4059-B65E-5108464AC623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Core.Application", "src\Kernel\Core\Application\Triton.Core.Application\Triton.Core.Application.csproj", "{FE58CF63-210C-4262-854E-E0707345E20B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton", "src\Presentation\Triton\Triton.csproj", "{22370B06-C39F-452F-BD84-59FB5753C8A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Core.Domain", "src\Kernel\Core\Domain\Triton.Core.Domain\Triton.Core.Domain.csproj", "{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Identity", "src\Kernel\Infrastructure\Triton.Identity\Triton.Identity.csproj", "{8AEF8BDA-8D10-457F-933F-10DE2D3A69A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Core.Domain.Common", "src\Kernel\Core\Domain\Triton.Core.Domain.Common\Triton.Core.Domain.Common.csproj", "{AF94676A-3CF0-4059-B65E-5108464AC623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Infrastructure", "src\Kernel\Infrastructure\Triton.Infrastructure\Triton.Infrastructure.csproj", "{2CD75351-2925-4F6C-92F5-B181E1C91DFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton", "src\Presentation\Triton\Triton.csproj", "{22370B06-C39F-452F-BD84-59FB5753C8A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.WebAPI", "src\Kernel\API\Triton.WebAPI\Triton.WebAPI.csproj", "{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,18 +37,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0553DA5E-1B97-4DCD-9A67-BEB9353EC615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0553DA5E-1B97-4DCD-9A67-BEB9353EC615}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0553DA5E-1B97-4DCD-9A67-BEB9353EC615}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0553DA5E-1B97-4DCD-9A67-BEB9353EC615}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DC00A194-FBA6-41AF-BEC4-90CFC491A5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DC00A194-FBA6-41AF-BEC4-90CFC491A5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DC00A194-FBA6-41AF-BEC4-90CFC491A5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DC00A194-FBA6-41AF-BEC4-90CFC491A5AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE500839-065F-44F8-8F0D-96C72EE9CAE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE500839-065F-44F8-8F0D-96C72EE9CAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE500839-065F-44F8-8F0D-96C72EE9CAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE500839-065F-44F8-8F0D-96C72EE9CAE4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE58CF63-210C-4262-854E-E0707345E20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE58CF63-210C-4262-854E-E0707345E20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE58CF63-210C-4262-854E-E0707345E20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,6 +53,18 @@ Global
 		{22370B06-C39F-452F-BD84-59FB5753C8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22370B06-C39F-452F-BD84-59FB5753C8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22370B06-C39F-452F-BD84-59FB5753C8A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AEF8BDA-8D10-457F-933F-10DE2D3A69A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AEF8BDA-8D10-457F-933F-10DE2D3A69A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AEF8BDA-8D10-457F-933F-10DE2D3A69A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AEF8BDA-8D10-457F-933F-10DE2D3A69A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CD75351-2925-4F6C-92F5-B181E1C91DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CD75351-2925-4F6C-92F5-B181E1C91DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CD75351-2925-4F6C-92F5-B181E1C91DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CD75351-2925-4F6C-92F5-B181E1C91DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,13 +75,13 @@ Global
 		{C791A273-77D3-45CF-BACF-2F210D82C0D1} = {7ADE3AA7-8A83-4528-A8DE-DB5BFCA988EA}
 		{DDBF5E82-02BC-46D4-AA5C-D53BCF4D24B5} = {CD2A597F-EEB4-4AF0-8E98-C5CC83FC7422}
 		{8999CF74-8191-408D-BEA5-2D8FAF90DEC0} = {CD2A597F-EEB4-4AF0-8E98-C5CC83FC7422}
-		{0553DA5E-1B97-4DCD-9A67-BEB9353EC615} = {404D5A64-2963-43CA-94DD-75BF52B24361}
-		{DC00A194-FBA6-41AF-BEC4-90CFC491A5AD} = {C791A273-77D3-45CF-BACF-2F210D82C0D1}
-		{CE500839-065F-44F8-8F0D-96C72EE9CAE4} = {C791A273-77D3-45CF-BACF-2F210D82C0D1}
 		{FE58CF63-210C-4262-854E-E0707345E20B} = {DDBF5E82-02BC-46D4-AA5C-D53BCF4D24B5}
 		{ACF7F9B2-5D5B-44AE-B4A3-C6167317CA77} = {8999CF74-8191-408D-BEA5-2D8FAF90DEC0}
 		{AF94676A-3CF0-4059-B65E-5108464AC623} = {8999CF74-8191-408D-BEA5-2D8FAF90DEC0}
 		{22370B06-C39F-452F-BD84-59FB5753C8A3} = {61FC69E1-4D97-4478-8F4C-C947C00423D4}
+		{8AEF8BDA-8D10-457F-933F-10DE2D3A69A3} = {C791A273-77D3-45CF-BACF-2F210D82C0D1}
+		{2CD75351-2925-4F6C-92F5-B181E1C91DFE} = {C791A273-77D3-45CF-BACF-2F210D82C0D1}
+		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB} = {404D5A64-2963-43CA-94DD-75BF52B24361}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA5215D5-F955-4FC3-9072-19F17DFC74C6}
@@ -90,37 +90,28 @@ Global
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
-		$0.TextStylePolicy = $2
+		$0.TextStylePolicy = $12
 		$2.inheritsSet = null
 		$2.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $3
 		$3.scope = text/x-csharp
-		$0.TextStylePolicy = $4
 		$4.FileWidth = 80
 		$4.TabsToSpaces = True
 		$4.scope = text/plain
-		$0.TextStylePolicy = $5
 		$5.inheritsSet = null
 		$5.scope = text/x-css
-		$0.TextStylePolicy = $6
 		$6.inheritsSet = null
 		$6.scope = text/x-web
-		$0.TextStylePolicy = $7
 		$7.inheritsSet = null
 		$7.scope = text/x-vs
-		$0.TextStylePolicy = $8
 		$8.inheritsSet = null
 		$8.scope = text/x-cshtml-web
-		$0.TextStylePolicy = $9
 		$9.inheritsSet = null
 		$9.scope = text/x-html
-		$0.TextStylePolicy = $10
 		$10.inheritsSet = null
 		$10.scope = text/x-javascript
-		$0.TextStylePolicy = $11
 		$11.inheritsSet = null
 		$11.scope = text/x-jsts
-		$0.TextStylePolicy = $12
 		$12.inheritsSet = null
 		$12.scope = text/x-json
 		$0.StandardHeader = $13

@@ -1,19 +1,20 @@
-{
+﻿{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:42948",
-      "sslPort": 44328
+      "applicationUrl": "http://localhost:47916",
+      "sslPort": 44337
     }
   },
   "profiles": {
-    "Triton.Kernel.WebAPI": {
+    "Triton.WebAPI": {
       "commandName": "Project",
+      "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7175;http://localhost:5047",
+      "applicationUrl": "https://localhost:7268;http://localhost:5127",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
