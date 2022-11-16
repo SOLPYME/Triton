@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Triton.WebAPI.Controllers
+namespace Triton.Core.WebAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]

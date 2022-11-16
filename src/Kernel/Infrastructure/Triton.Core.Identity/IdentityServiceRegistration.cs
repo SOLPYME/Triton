@@ -7,10 +7,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Triton.Core.Application.Contracts.Identity;
 using Triton.Core.Application.Models.Identity;
-using Triton.Identity.Models;
-using Triton.Identity.Services;
+using Triton.Core.Identity.Models;
+using Triton.Core.Identity.Services;
 
-namespace Triton.Identity
+namespace Triton.Core.Identity
 {
     public static class IdentityServiceRegistration
     {

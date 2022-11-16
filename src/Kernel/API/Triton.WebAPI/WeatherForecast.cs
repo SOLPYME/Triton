@@ -1,4 +1,4 @@
-namespace Triton.WebAPI
+namespace Triton.Core.WebAPI
 {
     public class WeatherForecast
     {

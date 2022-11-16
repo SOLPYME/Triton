@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Triton.Core.Domain.Common;
 
-namespace Triton.Infrastructure.Persistence
+namespace Triton.Core.Infrastructure.Persistence
 {
-	public class TritonDbContext : DbContext
+    public class TritonDbContext : DbContext
 	{
 		public TritonDbContext(DbContextOptions<TritonDbContext> options) : base(options)
 		{ }

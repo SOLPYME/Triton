@@ -7,25 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.11" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.11">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
     <PackageReference Include="SendGrid" Version="9.28.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Application\Triton.Core.Application\Triton.Core.Application.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Email\" />
-    <Folder Include="Reporitories\" />
-    <Folder Include="Persistence\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Persistence\" />
+    <ProjectReference Include="..\..\Core\Domain\Triton.Core.Domain.Common\Triton.Core.Domain.Common.csproj" />
   </ItemGroup>
 </Project>

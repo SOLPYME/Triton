@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Triton.Core.Application.Contracts.Persistence;
 using Triton.Core.Domain.Common;
-using Triton.Infrastructure.Persistence;
+using Triton.Core.Infrastructure.Persistence;
 
-namespace Triton.Infrastructure.Reporitories
+namespace Triton.Core.Infrastructure.Reporitories
 {
     public class UnitOfWork : IUnitOfWork
     {

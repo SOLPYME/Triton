@@ -4,9 +4,8 @@ using SendGrid;
 using SendGrid.Helpers.Mail;
 using Triton.Core.Application.Contracts.Infrastructure;
 using Triton.Core.Application.Models;
-using static System.Net.Mime.MediaTypeNames;
 
-namespace Triton.Infrastructure.Email
+namespace Triton.Core.Infrastructure.Email
 {
     public class EmailService : IEmailService
     {

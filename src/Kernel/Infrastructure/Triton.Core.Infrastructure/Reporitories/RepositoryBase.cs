@@ -1,11 +1,9 @@
-﻿using System;
+﻿using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using System.Linq;
-using System.Linq.Expressions;
 using Triton.Core.Application.Contracts.Persistence;
 using Triton.Core.Domain.Common;
 
-namespace Triton.Infrastructure.Reporitories
+namespace Triton.Core.Infrastructure.Reporitories
 {
     public class RepositoryBase<T> : IAsyncRepository<T> where T : BaseDomainModel
     {
@@ -51,10 +49,7 @@ namespace Triton.Infrastructure.Reporitories
             return await query.ToListAsync();
         }
 
-        public virtual async Task<T> GetEntityByIdAsync(int id)
-        {
-            return await _context.Set<T>().FindAsync(id);
-        }
+        public virtual async Task<T> GetEntityByIdAsync(int id) => (await _context.Set<T>().FindAsync(id))!;
         public async Task<T> AddEntityAsync(T entity)
         {
             _context.Set<T>().Add(entity);
@@ -74,10 +69,7 @@ namespace Triton.Infrastructure.Reporitories
             await _context.SaveChangesAsync();
         }
 
-        public virtual T GetEntityById(int id)
-        {
-            return _context.Set<T>().Find(id);
-        }
+        public virtual T GetEntityById(int id) => (_context.Set<T>().Find(id))!;
         public T AddEntity(T entity)
         {
             _context.Set<T>().Add(entity);

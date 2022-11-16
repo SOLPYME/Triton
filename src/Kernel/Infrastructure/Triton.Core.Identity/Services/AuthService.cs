@@ -7,9 +7,9 @@ using Microsoft.IdentityModel.Tokens;
 using Triton.Core.Application.Constants;
 using Triton.Core.Application.Contracts.Identity;
 using Triton.Core.Application.Models.Identity;
-using Triton.Identity.Models;
+using Triton.Core.Identity.Models;
 
-namespace Triton.Identity.Services
+namespace Triton.Core.Identity.Services
 {
     public class AuthService : IAuthService
     {

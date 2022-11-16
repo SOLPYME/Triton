@@ -1,14 +1,13 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Triton.Core.Application.Contracts.Infrastructure;
 using Triton.Core.Application.Contracts.Persistence;
 using Triton.Core.Application.Models;
-using Triton.Infrastructure.Email;
-using Triton.Infrastructure.Reporitories;
+using Triton.Core.Infrastructure.Email;
+using Triton.Core.Infrastructure.Reporitories;
 
-namespace Triton.Infrastructure
+namespace Triton.Core.Infrastructure
 {
     public static class InfrastructureServiceRegistration
     {

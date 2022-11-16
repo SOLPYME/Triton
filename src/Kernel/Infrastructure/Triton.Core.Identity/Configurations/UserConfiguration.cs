@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Triton.Identity.Models;
+using Triton.Core.Identity.Models;
 
-namespace Triton.Identity.Configurations
+namespace Triton.Core.Identity.Configurations
 {
     public class UserConfiguration : IEntityTypeConfiguration<ApplicationUser>
     {
