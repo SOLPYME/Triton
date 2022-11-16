@@ -21,12 +21,9 @@
 
   <ItemGroup>
     <Folder Include="Behaviours\" />
-    <Folder Include="Constants\" />
-    <Folder Include="Contracts\Identity\" />
     <Folder Include="Contracts\Infrastructure\" />
     <Folder Include="Contracts\Persistence\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="Models\Identity\" />
   </ItemGroup>
 	
 </Project>

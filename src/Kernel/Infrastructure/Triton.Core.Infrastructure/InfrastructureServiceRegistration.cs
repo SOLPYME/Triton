@@ -23,6 +23,5 @@ namespace Triton.Core.Infrastructure
             services.AddTransient<IEmailService, EmailService>();
             return services;
         }
-
     }
 }

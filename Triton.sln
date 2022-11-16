@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
@@ -21,13 +20,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Application", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Domain.Common", "src\Kernel\Core\Domain\Triton.Core.Domain.Common\Triton.Core.Domain.Common.csproj", "{AF94676A-3CF0-4059-B65E-5108464AC623}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Core.Infrastructure", "src\Kernel\Infrastructure\Triton.Core.Infrastructure\Triton.Core.Infrastructure.csproj", "{553FC569-01AA-4289-A76E-00E240C2F31B}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton", "src\Presentation\Triton\Triton.csproj", "{22370B06-C39F-452F-BD84-59FB5753C8A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Core.WebAPI", "src\Kernel\API\Triton.WebAPI\Triton.Core.WebAPI.csproj", "{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Identity.WebAPI", "src\Kernel\API\Triton.Identity.WebAPI\Triton.Identity.WebAPI.csproj", "{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Core.Infrastructure", "src\Kernel\Infrastructure\Triton.Core.Infrastructure\Triton.Core.Infrastructure.csproj", "{553FC569-01AA-4289-A76E-00E240C2F31B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Identity.Infrastructure", "src\Kernel\Infrastructure\Triton.Identity.Infrastructure\Triton.Identity.Infrastructure.csproj", "{BED6A2D6-9D94-4534-ADF7-F1A686518A77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Core.Identity", "src\Kernel\Infrastructure\Triton.Core.Identity\Triton.Core.Identity.csproj", "{BED6A2D6-9D94-4534-ADF7-F1A686518A77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Identity.Application", "src\Kernel\Core\Application\Triton.Identity.Application\Triton.Identity.Application.csproj", "{3658336C-4C13-4AA0-BB13-CA78F329E497}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +48,6 @@ Global
 		{22370B06-C39F-452F-BD84-59FB5753C8A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22370B06-C39F-452F-BD84-59FB5753C8A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22370B06-C39F-452F-BD84-59FB5753C8A3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CD75351-2925-4F6C-92F5-B181E1C91DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CD75351-2925-4F6C-92F5-B181E1C91DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CD75351-2925-4F6C-92F5-B181E1C91DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CD75351-2925-4F6C-92F5-B181E1C91DFE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -63,6 +60,10 @@ Global
 		{BED6A2D6-9D94-4534-ADF7-F1A686518A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BED6A2D6-9D94-4534-ADF7-F1A686518A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED6A2D6-9D94-4534-ADF7-F1A686518A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3658336C-4C13-4AA0-BB13-CA78F329E497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3658336C-4C13-4AA0-BB13-CA78F329E497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3658336C-4C13-4AA0-BB13-CA78F329E497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3658336C-4C13-4AA0-BB13-CA78F329E497}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,10 +77,10 @@ Global
 		{FE58CF63-210C-4262-854E-E0707345E20B} = {DDBF5E82-02BC-46D4-AA5C-D53BCF4D24B5}
 		{AF94676A-3CF0-4059-B65E-5108464AC623} = {8999CF74-8191-408D-BEA5-2D8FAF90DEC0}
 		{22370B06-C39F-452F-BD84-59FB5753C8A3} = {61FC69E1-4D97-4478-8F4C-C947C00423D4}
-		{2CD75351-2925-4F6C-92F5-B181E1C91DFE} = {C791A273-77D3-45CF-BACF-2F210D82C0D1}
 		{286C3177-72E5-4EF4-8739-DAA3E2F0F3CB} = {404D5A64-2963-43CA-94DD-75BF52B24361}
 		{553FC569-01AA-4289-A76E-00E240C2F31B} = {C791A273-77D3-45CF-BACF-2F210D82C0D1}
 		{BED6A2D6-9D94-4534-ADF7-F1A686518A77} = {C791A273-77D3-45CF-BACF-2F210D82C0D1}
+		{3658336C-4C13-4AA0-BB13-CA78F329E497} = {DDBF5E82-02BC-46D4-AA5C-D53BCF4D24B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA5215D5-F955-4FC3-9072-19F17DFC74C6}
@@ -88,32 +89,24 @@ Global
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
-		$0.TextStylePolicy = $12
-		$0.TextStylePolicy = $13
+		$0.TextStylePolicy = $21
 		$13.inheritsSet = null
 		$13.scope = text/x-csharp
 		$0.CSharpFormattingPolicy = $14
 		$14.scope = text/x-csharp
-		$0.TextStylePolicy = $15
 		$15.FileWidth = 80
 		$15.TabsToSpaces = True
 		$15.scope = text/plain
-		$0.TextStylePolicy = $16
 		$16.inheritsSet = null
 		$16.scope = text/x-css
-		$0.TextStylePolicy = $17
 		$17.inheritsSet = null
 		$17.scope = text/x-web
-		$0.TextStylePolicy = $18
 		$18.inheritsSet = null
 		$18.scope = text/x-vs
-		$0.TextStylePolicy = $19
 		$19.inheritsSet = null
 		$19.scope = text/x-cshtml-web
-		$0.TextStylePolicy = $20
 		$20.inheritsSet = null
 		$20.scope = text/x-html
-		$0.TextStylePolicy = $21
 		$21.inheritsSet = null
 		$21.scope = text/x-json
 		$0.StandardHeader = $22

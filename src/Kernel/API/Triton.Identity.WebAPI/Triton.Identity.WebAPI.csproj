@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Triton.WebAPI</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Triton.WebAPI' " />
+	<ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Core\Application\Triton.Core.Application\Triton.Core.Application.csproj" />
+	  <ProjectReference Include="..\..\Core\Application\Triton.Identity.Application\Triton.Identity.Application.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\Triton.Core.Infrastructure\Triton.Core.Infrastructure.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\Triton.Identity.Infrastructure\Triton.Identity.Infrastructure.csproj" />
+	</ItemGroup>
+</Project>
