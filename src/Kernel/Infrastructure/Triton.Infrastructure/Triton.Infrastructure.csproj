@@ -25,4 +25,7 @@
     <Folder Include="Persistence\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Persistence\" />
+  </ItemGroup>
 </Project>

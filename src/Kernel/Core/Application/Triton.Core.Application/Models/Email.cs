@@ -1,5 +1,4 @@
-﻿using System;
-namespace Triton.Core.Application.Models
+﻿namespace Triton.Core.Application.Models
 {
     public class Email
     {

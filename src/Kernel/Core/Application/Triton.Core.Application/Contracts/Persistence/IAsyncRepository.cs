@@ -17,12 +17,12 @@ namespace Triton.Core.Application.Contracts.Persistence
                                        bool disableTracking = true);
 
 
-        Task<T> GetEntityByIdAsync(Guid id);
+        Task<T> GetEntityByIdAsync(int id);
         Task<T> AddEntityAsync(T entity);
         Task<T> UpdateEntityAsync(T entity);
         Task DeleteEntityAsync(T entity);
 
-        T GetEntityById(Guid id);
+        T GetEntityById(int id);
         T AddEntity(T entity);
         T UpdateEntity(T entity);
         void DeleteEntity(T entity);
