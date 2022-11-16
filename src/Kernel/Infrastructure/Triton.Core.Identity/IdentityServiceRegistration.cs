@@ -18,11 +18,11 @@ namespace Triton.Core.Identity
         {
             services.Configure<JwtSettings>(configuration.GetSection("JwtSettings"));
 
-            services.AddDbContext<TritonDbContext>(options =>
+            services.AddDbContext<IdentityDbContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("TritonConnectionString"),
-                b => b.MigrationsAssembly(typeof(TritonDbContext).Assembly.FullName)));
+                b => b.MigrationsAssembly(typeof(IdentityDbContext).Assembly.FullName)));
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<TritonDbContext>().AddDefaultTokenProviders();
+                .AddEntityFrameworkStores<IdentityDbContext>().AddDefaultTokenProviders();
             services.AddTransient<IAuthService, AuthService>();
             services.AddAuthentication(options =>
             {

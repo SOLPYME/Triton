@@ -5,11 +5,10 @@ using Triton.Core.Identity.Models;
 
 namespace Triton.Core.Identity
 {
-    public class TritonDbContext : IdentityDbContext<ApplicationUser>
+    public class IdentityDbContext : IdentityDbContext<ApplicationUser>
     {
-        public TritonDbContext(DbContextOptions<TritonDbContext> options) : base(options)
-        {
-        }
+        public IdentityDbContext(DbContextOptions<IdentityDbContext> options) : base(options)
+        { }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

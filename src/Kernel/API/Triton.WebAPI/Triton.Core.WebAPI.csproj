@@ -16,14 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Errors\" />
-    <Folder Include="Middleware\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Infrastructure\Triton.Identity\Triton.Core.Identity.csproj">
-      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
-    </ProjectReference>
+    <ProjectReference Include="..\..\Core\Application\Triton.Core.Application\Triton.Core.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Triton.Core.Identity\Triton.Core.Identity.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Triton.Core.Infrastructure\Triton.Core.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>

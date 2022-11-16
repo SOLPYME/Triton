@@ -2,12 +2,7 @@
 {
     public class BaseDomainModel
 	{
-        public BaseDomainModel()
-        {
-            Id = new Guid();
-        }
-
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public DateTime? CreatedDate { get; set; }
         public string? CreatedBy { get; set; }
 
