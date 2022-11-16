@@ -1,21 +1,31 @@
 ﻿using System.Collections;
 using Triton.Core.Application.Contracts.Persistence;
 using Triton.Core.Domain.Common;
-using Triton.Core.Infrastructure.Persistence;
+using Triton.Sample.Application.Contracts.Persistence;
+using Triton.Sample.Infrastructure.Persistence;
+using IUnitOfWork = Triton.Sample.Application.Contracts.Persistence.IUnitOfWork;
 
-namespace Triton.Core.Infrastructure.Reporitories
+namespace Triton.Sample.Infrastructure.Repository
 {
     public class UnitOfWork : IUnitOfWork
     {
         private Hashtable _repositories;
-        private readonly TritonDbContext _context;
-        public TritonDbContext DbContext => _context;
+        private readonly SampleDbContext _context;
+        private IVideoRepository _videoRepository;
+        private IStreamerRepository _streamerRepository;
 
-        public UnitOfWork(TritonDbContext context)
+        public IVideoRepository VideoRepository => _videoRepository ??= new VideoRepository(_context);
+        public IStreamerRepository StreamerRepository => _streamerRepository ??= new StreamerRepository(_context);
+        public SampleDbContext SampleDbContext => _context;
+
+        public UnitOfWork(SampleDbContext context)
         {
             _context = context;
             _repositories = new Hashtable();
+            _videoRepository ??=new VideoRepository(_context);
+            _streamerRepository ??= new StreamerRepository(_context);
         }
+
         public async Task<int> Complete()
         {
             try
@@ -24,12 +34,13 @@ namespace Triton.Core.Infrastructure.Reporitories
             }
             catch (Exception ex)
             {
-                throw new Exception($"Err {ex.Message}");
+                throw new Exception($"Error {ex.Message} in {ex.Source}.");
             }
         }
         public void Dispose()
         {
             _context.Dispose();
+            GC.SuppressFinalize(this);
         }
         public IAsyncRepository<TEntity> Repository<TEntity>() where TEntity : BaseDomainModel
         {
@@ -46,6 +57,5 @@ namespace Triton.Core.Infrastructure.Reporitories
             }
             return (IAsyncRepository<TEntity>)_repositories[type]!;
         }
-
     }
 }

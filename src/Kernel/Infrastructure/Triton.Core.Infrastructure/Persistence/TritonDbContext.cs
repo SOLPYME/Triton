@@ -1,39 +1,33 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Triton.Core.Domain.Common;
 
 namespace Triton.Core.Infrastructure.Persistence
 {
     public class TritonDbContext : DbContext
-	{
-		public TritonDbContext(DbContextOptions<TritonDbContext> options) : base(options)
-		{ }
-		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-		//{
-		//	optionsBuilder.UseSqlServer(@"Data Source=localhost;
-		//		Initial Catalog=Triton; user id=sa;password=Triton2022$")
-		//		.LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, Microsoft.Extensions.Logging.LogLevel.Information )
-		//		.EnableSensitiveDataLogging();
-		//}
-		public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
-		{
-			foreach(var _entry in ChangeTracker.Entries<BaseDomainModel>())
-			{
-				switch (_entry.State)
-				{
-					case EntityState.Added:
-						_entry.Entity.CreatedDate = DateTime.Now;
-						_entry.Entity.CreatedBy = "SYSTEM";
-						break;
-					case EntityState.Modified:
-						_entry.Entity.LastModifiedDate = DateTime.Now;
-						_entry.Entity.LastModifiedBy = "SYSTEM";
-						break;
-				}
-			}
-			return base.SaveChangesAsync(cancellationToken);
-		}
-		protected override void OnModelCreating(ModelBuilder modelBuilder)
-		{ }
-	}
-}
+    {
+        public TritonDbContext(DbContextOptions<TritonDbContext> options) : base(options)
+        { }
 
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var entry in ChangeTracker.Entries<BaseDomainModel>())
+            {
+                switch (entry.State)
+                {
+                    case EntityState.Added:
+                        entry.Entity.CreatedDate = DateTime.Now;
+                        entry.Entity.CreatedBy = "TritonSystem";
+                        break;
+                    case EntityState.Modified:
+                        entry.Entity.LastModifiedDate = DateTime.Now;
+                        entry.Entity.LastModifiedBy = "TritonSystem";
+                        break;
+                }
+            }
+            return base.SaveChangesAsync(cancellationToken);
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        { }
+    }
+}

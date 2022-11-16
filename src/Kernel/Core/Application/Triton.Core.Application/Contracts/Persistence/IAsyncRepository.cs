@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 using Triton.Core.Domain.Common;
 
 namespace Triton.Core.Application.Contracts.Persistence
