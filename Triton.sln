@@ -44,13 +44,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{498F42C9-8BDE-4D74-8B14-EFFDDBE0D93B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Sample.WebAPI", "src\Modules\Sample\API\Triton.Sample.WebAPI\Triton.Sample.WebAPI.csproj", "{D729829B-2AB3-4DBC-8FC8-AC8730C27DDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Sample.WebAPI", "src\Modules\Sample\API\Triton.Sample.WebAPI\Triton.Sample.WebAPI.csproj", "{D729829B-2AB3-4DBC-8FC8-AC8730C27DDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Sample.Application", "src\Modules\Sample\Core\Application\Triton.Sample.Application\Triton.Sample.Application.csproj", "{F753E5BB-9E7A-4049-9171-829AE6D8F158}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Sample.Application", "src\Modules\Sample\Core\Application\Triton.Sample.Application\Triton.Sample.Application.csproj", "{F753E5BB-9E7A-4049-9171-829AE6D8F158}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Sample.Domain", "src\Modules\Sample\Core\Domain\Triton.Sample.Domain\Triton.Sample.Domain.csproj", "{26EF2707-256E-41C5-B82F-881E58C24E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Sample.Domain", "src\Modules\Sample\Core\Domain\Triton.Sample.Domain\Triton.Sample.Domain.csproj", "{26EF2707-256E-41C5-B82F-881E58C24E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Sample.Infrastructure", "src\Modules\Sample\Infrastructure\Triton.Sample.Infrastructure\Triton.Sample.Infrastructure.csproj", "{C3A3DB5E-38F4-411A-BACB-F4F2BE088105}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Triton.Sample.Infrastructure", "src\Modules\Sample\Infrastructure\Triton.Sample.Infrastructure\Triton.Sample.Infrastructure.csproj", "{C3A3DB5E-38F4-411A-BACB-F4F2BE088105}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{92CDD3BF-51C7-4741-9C02-3A2A09171AED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Triton.Sample.Web", "src\Modules\Sample\Web\Triton.Sample.Web\Triton.Sample.Web.csproj", "{9A312D84-F07F-434B-85A3-E603B7946D4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -102,6 +106,10 @@ Global
 		{C3A3DB5E-38F4-411A-BACB-F4F2BE088105}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3A3DB5E-38F4-411A-BACB-F4F2BE088105}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3A3DB5E-38F4-411A-BACB-F4F2BE088105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A312D84-F07F-434B-85A3-E603B7946D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A312D84-F07F-434B-85A3-E603B7946D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A312D84-F07F-434B-85A3-E603B7946D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A312D84-F07F-434B-85A3-E603B7946D4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +137,8 @@ Global
 		{F753E5BB-9E7A-4049-9171-829AE6D8F158} = {7CD68A3A-582D-4041-B483-8D5CA18D5F92}
 		{26EF2707-256E-41C5-B82F-881E58C24E27} = {498F42C9-8BDE-4D74-8B14-EFFDDBE0D93B}
 		{C3A3DB5E-38F4-411A-BACB-F4F2BE088105} = {1C0FCC71-7E78-42EC-918C-519B2283D5E0}
+		{92CDD3BF-51C7-4741-9C02-3A2A09171AED} = {4941E66E-ADDF-4C11-8E9C-AE341CDBEF7F}
+		{9A312D84-F07F-434B-85A3-E603B7946D4A} = {92CDD3BF-51C7-4741-9C02-3A2A09171AED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA5215D5-F955-4FC3-9072-19F17DFC74C6}
