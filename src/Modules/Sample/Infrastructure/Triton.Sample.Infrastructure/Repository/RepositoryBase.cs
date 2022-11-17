@@ -1,15 +1,16 @@
-﻿using System.Linq.Expressions;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 using Triton.Core.Application.Contracts.Persistence;
 using Triton.Core.Domain.Common;
+using Triton.Sample.Infrastructure.Persistence;
 
-namespace Triton.Core.Infrastructure.Reporitories
+namespace Triton.Sample.Infrastructure.Repository
 {
     public class RepositoryBase<T> : IAsyncRepository<T> where T : BaseDomainModel
     {
-        protected readonly DbContext _context;
+        protected readonly SampleDbContext _context;
 
-        public RepositoryBase(DbContext context)
+        public RepositoryBase(SampleDbContext context)
         {
             _context = context;
         }
@@ -34,7 +35,6 @@ namespace Triton.Core.Infrastructure.Reporitories
                 return await orderBy(query).ToListAsync();
             return await query.ToListAsync();
         }
-
         public async Task<IReadOnlyList<T>> GetAsync(Expression<Func<T, bool>>? predicate = null,
                                      Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null,
                                      List<Expression<Func<T, object>>>? includes = null,
