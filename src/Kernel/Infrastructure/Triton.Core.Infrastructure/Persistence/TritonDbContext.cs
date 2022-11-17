@@ -6,7 +6,7 @@ namespace Triton.Core.Infrastructure.Persistence
 {
     public class TritonDbContext : DbContext
     {
-        public TritonDbContext(DbContextOptions<TritonDbContext> options) : base(options)
+        public TritonDbContext(DbContextOptions options) : base(options)
         { }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
