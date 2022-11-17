@@ -36,10 +36,7 @@ namespace Triton.Core.Infrastructure.Repository
         }
         public IAsyncRepository<TEntity> Repository<TEntity>() where TEntity : BaseDomainModel
         {
-            if (_repositories == null)
-            {
-                _repositories = new Hashtable();
-            }
+            _repositories ??= new Hashtable();
             var type = typeof(TEntity).Name;
             if (!_repositories.ContainsKey(type))
             {
