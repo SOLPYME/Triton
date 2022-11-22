@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using Triton.Core.Application.Contracts.Infrastructure;
-using Triton.Core.Application.Models;
+using Triton.Common.EMail.Contracts.Infrastructure;
+using Triton.Common.EMail.Models;
 using Triton.Sample.Application.Contracts.Persistence;
 using Triton.Sample.Domain;
 

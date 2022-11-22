@@ -2,8 +2,9 @@
 using Microsoft.Extensions.Options;
 using SendGrid;
 using SendGrid.Helpers.Mail;
-using Triton.Core.Application.Contracts.Infrastructure;
-using Triton.Core.Application.Models;
+using Triton.Common.EMail.Contracts.Infrastructure;
+using Triton.Common.EMail.Models;
+using EmailModel = Triton.Common.EMail.Models.Email;
 
 namespace Triton.Core.Infrastructure.Email
 {
@@ -17,7 +18,7 @@ namespace Triton.Core.Infrastructure.Email
             _EmailSettings = emailSettings.Value;
             _Logger = logger;
         }
-        public async Task<bool> SendEmail(Application.Models.Email email)
+        public async Task<bool> SendEmail(EmailModel email)
         {
             var client = new SendGridClient(_EmailSettings.ApiKey);
             var subject = email.Subject;

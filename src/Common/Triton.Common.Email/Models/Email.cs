@@ -1,4 +1,4 @@
-﻿namespace Triton.Core.Application.Models
+﻿namespace Triton.Common.EMail.Models
 {
     public class Email
     {

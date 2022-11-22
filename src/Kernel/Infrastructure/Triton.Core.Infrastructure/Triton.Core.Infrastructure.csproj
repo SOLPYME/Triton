@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Triton.Common.Email\Triton.Common.EMail.csproj" />
     <ProjectReference Include="..\..\Core\Application\Triton.Core.Application\Triton.Core.Application.csproj" />
     <ProjectReference Include="..\..\Core\Domain\Triton.Core.Domain.Common\Triton.Core.Domain.Common.csproj" />
   </ItemGroup>

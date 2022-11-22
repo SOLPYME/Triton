@@ -22,9 +22,9 @@
 
   <ItemGroup>
     <Folder Include="Behaviours\" />
-    <Folder Include="Contracts\Infrastructure\" />
     <Folder Include="Contracts\Persistence\" />
     <Folder Include="Exceptions\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 	
 </Project>

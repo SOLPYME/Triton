@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Triton.Core.Application.Contracts.Infrastructure;
-using Triton.Core.Application.Models;
+using Triton.Common.EMail.Contracts.Infrastructure;
+using Triton.Common.EMail.Models;
 using Triton.Core.Infrastructure.Email;
 using Triton.Sample.Application.Contracts.Persistence;
 using Triton.Sample.Infrastructure.Persistence;
@@ -16,7 +16,7 @@ namespace Triton.Sample.Infrastructure
         {
 
             services.AddDbContext<SampleDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("ConnectionString"))
+                options.UseSqlServer(configuration.GetConnectionString("TritonConnectionString"))
             );
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(typeof(Core.Application.Contracts.Persistence.IAsyncRepository<>), typeof(RepositoryBase<>));

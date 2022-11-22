@@ -46,7 +46,7 @@ namespace Triton.Sample.WebAPI.Controllers
         [ProducesDefaultResponseType]
         public async Task<ActionResult> DeleteStreamer(int id)
         {
-            var command = new DeleteStreamerCommand
+            var command = new DeleteDirectorCommand
             {
                 Id = id
             };
