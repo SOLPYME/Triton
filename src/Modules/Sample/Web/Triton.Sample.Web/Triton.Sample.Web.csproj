@@ -7,7 +7,6 @@
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
 	<AssemblyName>rcl_SampleWeb</AssemblyName>
 	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
-	<GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using Triton.Sample.Domain;
 
 namespace Triton.Sample.Infrastructure.Persistence
@@ -10,7 +11,7 @@ namespace Triton.Sample.Infrastructure.Persistence
         public DbSet<Actor>? Actores { get; set; }
         public DbSet<Director>? Directores { get; set; }
 
-        public SampleDbContext(DbContextOptions options) : base(options)
+        public SampleDbContext(DbContextOptions options, ILogger<SampleDbContext> logger) : base(options, logger)
         { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

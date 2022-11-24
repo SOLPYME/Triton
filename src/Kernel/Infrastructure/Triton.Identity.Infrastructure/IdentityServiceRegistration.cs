@@ -8,6 +8,7 @@ using System.Text;
 using Triton.Identity.Application.Contracts;
 using Triton.Identity.Application.Models;
 using Triton.Identity.Infrastructure.Models;
+using Triton.Identity.Infrastructure.Persistence;
 using Triton.Identity.Infrastructure.Services;
 
 namespace Triton.Identity.Infrastructure
